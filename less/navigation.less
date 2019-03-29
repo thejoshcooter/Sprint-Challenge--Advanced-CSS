@@ -1,12 +1,28 @@
 // Navigation code here
 
 .main-nav {
-    .test(red);
     width: 100%;
+    background-color: @nav-bg;
     
     div {
-        .test(blue);
         max-width: 800px;
         margin: 0 auto;
+        .flexcol(nowrap);
+        
+        h1 {
+            font-size: 5rem;
+        }
+        
+        ul {
+            .flexbox(space-between, center);
+            margin: 1.5rem;
+        }
+        
+        ul li a {
+            font-size: 2rem;
+            text-decoration: none;
+            margin: 1rem;
+            padding: 1rem;
+        }
     }
 }

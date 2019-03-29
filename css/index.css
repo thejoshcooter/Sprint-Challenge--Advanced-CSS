@@ -159,15 +159,34 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  background-color: red;
 }
 .main-nav {
-  background-color: red;
   width: 100%;
+  background-color: #F6F6F6;
 }
 .main-nav div {
-  background-color: blue;
   max-width: 800px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+.main-nav div h1 {
+  font-size: 5rem;
+}
+.main-nav div ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem;
+}
+.main-nav div ul li a {
+  font-size: 2rem;
+  text-decoration: none;
+  margin: 1rem;
+  padding: 1rem;
 }
 footer {
   color: #22283B;
