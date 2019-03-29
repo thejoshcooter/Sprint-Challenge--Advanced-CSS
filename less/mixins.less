@@ -1,1 +1,18 @@
-// Mixins Here
+// Tester Mixins
+
+.test(@color) {
+    background-color: @color;
+}
+
+// Flexbox Mixins
+
+.flexbox(@jusify: space-around, @align: center;) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.flexcol(@wrap: nowrap) {
+    .flexbox;
+    flex-flow: column @wrap;
+}
