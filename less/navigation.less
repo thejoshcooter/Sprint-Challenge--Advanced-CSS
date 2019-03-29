@@ -17,6 +17,7 @@
         ul {
             .flexbox(space-between, center);
             margin: 1.5rem;
+            
         }
         
         ul li a {
@@ -24,6 +25,11 @@
             text-decoration: none;
             margin: 1rem;
             padding: 1rem;
+            
+            @media @phone {
+                .flexbox(space-around, center);
+                margin: 0 0.5rem;
+            }
         }
     }
 }
