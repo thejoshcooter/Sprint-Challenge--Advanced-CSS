@@ -16,3 +16,15 @@
     .flexbox;
     flex-flow: column @wrap;
 }
+
+// Button Mixins
+
+.instabutton(@width: 200px, @height: 60px, @color: @ebony-clay) {
+    width: @width;
+    height: @height;
+    background-color: @color;
+    .flexbox(space-around, center);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 2rem;
+}
