@@ -1,1 +1,37 @@
-// Mixins Here
+// Tester Mixins
+
+.test(@color) {
+    background-color: @color;
+}
+
+// Flexbox Mixins
+
+.flexbox(@justify: space-around, @align: center) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.flexcol(@wrap: nowrap) {
+    .flexbox;
+    flex-flow: column @wrap;
+}
+
+// Button Mixins
+
+.instabutton(@width: 200px, @height: 60px, @color: @ebony-clay) {
+    width: @width;
+    height: @height;
+    background-color: @color;
+    .flexbox(space-around, center);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 2rem;
+    
+    &:hover {
+              color: @ebony-clay;
+              background-color: #fff;
+              border: 1px solid @ebony-clay;
+              box-shadow: 1px 2px @ebony-clay;
+          }
+}

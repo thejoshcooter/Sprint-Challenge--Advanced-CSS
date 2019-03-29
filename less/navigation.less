@@ -1,1 +1,39 @@
 // Navigation code here
+
+.main-nav {
+    width: 100%;
+    padding-top: 2rem;
+    background-color: @nav-bg;
+    
+    div {
+        max-width: 800px;
+        margin: 0 auto;
+        .flexcol(nowrap);
+        
+        h1 {
+            font-size: 5rem;
+        }
+        
+        ul {
+            .flexbox(space-between, center);
+            margin: 1.5rem;
+            
+            @media @phone {
+                margin: 1rem 1.5rem;
+            }
+            
+        }
+        
+        ul li a {
+            font-size: 1.75rem;
+            text-decoration: none;
+            margin: 1rem;
+            padding: 1rem;
+            
+            @media @phone {
+                .flexbox(space-around, center);
+                margin: 0 0.5rem;
+            }
+        }
+    }
+}
